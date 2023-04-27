@@ -65,7 +65,7 @@ const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+  ${mobile({ fontSize: "15px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
