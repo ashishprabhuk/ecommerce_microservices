@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommerce-microservices
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ecommerce-microservices
+  template:
+    metadata:
+      labels:
+        app: ecommerce-microservices
+    spec:
+      containers:
+      - name: ecommerce-microservices
+        image: ecommerce-microservices:latest
+        ports:
+        - containerPort: 3000
